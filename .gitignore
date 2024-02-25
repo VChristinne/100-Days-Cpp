@@ -32,3 +32,6 @@
 *.app
 *.iml
 *.xml
+
+# Idea files
+.idea
