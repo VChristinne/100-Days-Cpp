@@ -10,7 +10,7 @@
 */
 
 #include <iostream>
-using namespace std;
+using std::cout, std::endl, std::string;
 
 int basic_datatypes();
 int derived_datatypes();
