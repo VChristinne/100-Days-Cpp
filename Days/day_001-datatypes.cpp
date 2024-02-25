@@ -61,7 +61,7 @@ int user_defined_datatypes() {
         float height;
     };
 
-    Person p1 = {"John", 6, 160};
+    Person p1 = {"John", 6, 1.60};
 
     class Fruit {
     public:
