@@ -20,7 +20,7 @@ int main() {
         case 1:
         {
             auto add = [] (float a, float b) {
-                cout << "Addition = " << a + b << endl;
+                cout << "Addition = " << a + b;
             };
             add(num1, num2);
             break;
@@ -29,7 +29,7 @@ int main() {
         case 2:
         {
             auto sub = [] (float a, float b) {
-                cout << "Subtraction = " << a - b << endl;
+                cout << "Subtraction = " << a - b;
             };
             sub(num1, num2);
             break;
@@ -38,7 +38,7 @@ int main() {
         case 3:
         {
             auto mult = [] (float a, float b) {
-                cout << "Multiplication = " << a * b << endl;
+                cout << "Multiplication = " << a * b;
             };
             mult(num1, num2);
             break;
@@ -48,9 +48,9 @@ int main() {
         {
             auto div = [] (float a, float b) {
                 if(b != 0) {
-                    cout << "Division = " << a / b << endl;
+                    cout << "Division = " << a / b;
                 } else {
-                    cout << "Error: Division by zero is not allowed." << endl;
+                    cout << "Error: Division by zero is not allowed.";
                 }
             };
             div(num1, num2);
@@ -66,12 +66,12 @@ int main() {
 }
 
 int menu() {
-    cout << "1. Add" << endl;
-    cout << "2. Subtract" << endl;
-    cout << "3. Multiply" << endl;
-    cout << "4. Divide" << endl;
-    cout << "5. Exit" << endl;
-    cout << "Enter your choice: ";
+    cout << "1. Add"
+            "\n2. Subtract"
+            "\n3. Multiply"
+            "\n4. Divide"
+            "\n5. Exit"
+            "\nEnter your choice: ";
     int choice;
     cin >> choice;
 
