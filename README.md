@@ -4,14 +4,14 @@ This is a 100-day journey through the C++ programming language, covering various
 
 ## Table of Contents
 
-1. [Data Types: Static Typing, Dynamic Typing and RTI](#data-types)
-2. [Pointers and References: Smart Pointers and Raw Pointers](#pointers-and-references)
-3. [Structuring Codebase: Scope, Headers, Namespaces and Forward Declaration](#structuring-codebase)
-4. [Structures and Classes: OOP, Rule of Zero, Three, and Five, Multiple and Diamond Inheritance](#structures-and-classes)
-5. [Exception handling: Access Violations, Exceptions and Exit Codes](#exception-handling)
+1. [Data Types](#data-types)
+2. [Pointers and References](#pointers-and-references)
+3. [Structuring Codebase](#structuring-codebase)
+4. [Structures and Classes](#structures-and-classes)
+5. [Exception handling](#exception-handling)
 6. [Standard Template Library (STL)](#standard-template-library-stl)
-7. [Templates: Variadic, Specialisation, Type Traits and SFINAE](#templates)
-8. [Idioms: Pimpl, CRTP, Non-Copyable, Erase-remove, Copy and Swap and Copy-Write](#idioms)
+7. [Templates](#templates)
+8. [Idioms](#idioms)
 9. [Wrap up](#wrap-up)
 
 ## Data Types
