@@ -1,11 +1,3 @@
-/*
-  I = ..
-  L = .-..
-  O = ---
-  V = ...-
-  U = ..-
-*/
-
 int led_red = 13;
 int led_yellow = 12;
 int led_green = 11;
