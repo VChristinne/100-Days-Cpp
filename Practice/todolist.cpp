@@ -1,4 +1,5 @@
 #include <iostream>
+#include <list>
 
 using std::cout, std::cin, std::endl, std::string;
 
@@ -13,23 +14,25 @@ void showTask(const Task&);
 
 int main() {
     Task item;
-    item = getTask(item);
-    showTask(item);
+    std::list<item> tasks = {};
+    
+    //item = getTask(item);
+    //showTask(item);
 
     return 0;
 }
 
 Task getTask(Task item) {
     cout << "\nTask Title: ";
-    cin >> (item.title);
+    cin >> item.title;
 
-    cout << "\nTask Description: ";
-    cin >> (item.description);
+    cout << "Task Description: ";
+    cin >> item.description;
 
     string doneInput;
-    cout << "\nTask Status (yes/no): ";
+    cout << "Task Status (done/no): ";
     cin >> doneInput;
-    item.done = (doneInput == "yes");
+    item.done = (doneInput == "done");
 
     return item;
 }
@@ -39,4 +42,3 @@ void showTask(const Task& item) {
     cout << "\nTask Description: " << item.description;
     cout << "\nTask Status: " << (item.done ? "Done" : "Pending");
 }
-
