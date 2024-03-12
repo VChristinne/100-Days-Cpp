@@ -1,7 +1,7 @@
 #include <iostream>
 #include <list>
 
-using std::cout, std::cin, std::endl, std::string;
+using namespace std;
 
 struct Task {
     string title;
@@ -14,10 +14,14 @@ void showTask(const Task&);
 
 int main() {
     Task item;
-    std::list<item> tasks = {};
-    
-    //item = getTask(item);
-    //showTask(item);
+    list<Task> tasks;
+
+    Task newTask = getTask(item);
+    tasks.push_back(newTask);
+
+    for (const Task& task : tasks) {
+        showTask(task);
+    }
 
     return 0;
 }
