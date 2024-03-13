@@ -28,15 +28,18 @@ int main() {
             }
 
             case 2: {
-                if (tasks.empty()) {
-                    cout << "No tasks to show\n";
-                    continue;
-                } else {
-                    for (const auto& task : tasks) {
-                        showTask(task);
+                try {
+                    if (tasks.empty()) {
+                        throw std::runtime_error("No tasks to show");
+                    } else {
+                        for (const auto& task : tasks) {
+                            showTask(task);
+                        }
                     }
+                } catch (const std::exception& e) {
+                    cout << e.what() << "\n";
                 }
-                break;
+                continue;
             }
 
             case 3: {
