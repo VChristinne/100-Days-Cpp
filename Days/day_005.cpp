@@ -8,11 +8,12 @@
  */
 
 #include <iostream>
-using std::cout, std::cin, std::endl;
+using namespace std;
 
 void array_type();
 
 int main() {
+    ios_base::sync_with_stdio(false);
     array_type();
 }
 
@@ -20,9 +21,9 @@ void array_type() {
     int my_array[100];
 
     int arr[] = {1, 2, 3, 4};
-    cout << "Third element: " << arr[2] << endl;
+    printf("\nThird element: %i", arr[2]);
     arr[2] = 30;
-    cout << "Third element: " << arr[2] << endl;
+    printf("\nThird element: %i", arr[2]);
 
     unsigned int maximum = 0;
     unsigned int minimum = UINT_MAX;
@@ -31,9 +32,9 @@ void array_type() {
         if (value > maximum) maximum = value;
         if (value < minimum) minimum = value;
     }
-    cout << "The maximum value: " << maximum << endl;
-    cout << "The minimum value: " << minimum << endl;
+    printf("\nThe maximum value: %i", maximum);
+    printf("\nThe minimum value: %i", minimum);
 
     size_t n_elements = sizeof(values) / sizeof(values[0]);
-    cout << "Size: " << n_elements << endl;
+    printf("\nSize: %lu", n_elements);
 }
