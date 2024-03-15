@@ -12,9 +12,9 @@
 #include <iostream>
 using std::cout, std::endl, std::string;
 
-int basic_datatypes();
-int derived_datatypes();
-int user_defined_datatypes();
+void basic_datatypes();
+void derived_datatypes();
+void user_defined_datatypes();
 
 int main() {
     basic_datatypes();
@@ -24,7 +24,7 @@ int main() {
     return 0;
 }
 
-int basic_datatypes() {
+void basic_datatypes() {
     int a = 5;
     float b = 5.5;
     char c = 'A';
@@ -35,11 +35,9 @@ int basic_datatypes() {
     cout << "Floating-point number: " << b << endl;
     cout << "Character: " << c << endl;
     cout << "Boolean: " << d << endl;
-
-    return 0;
 }
 
-int derived_datatypes() {
+void derived_datatypes() {
     int numbers[5] = {1, 2, 3, 4, 5};
     int num1 = 42;
     int* pNum = &num1;
@@ -50,11 +48,9 @@ int derived_datatypes() {
     cout << "Array: " << numbers[3] << endl;
     cout << "Pointer: " << pNum << endl;
     cout << "Reference: " << numRef << endl;
-
-    return 0;
 }
 
-int user_defined_datatypes() {
+void user_defined_datatypes() {
     struct Person {
         string name;
         int age;
@@ -78,12 +74,12 @@ int user_defined_datatypes() {
     f1.color = "Red";
 
     union Money {
-        wchar_t notation;
+        char note;
         float euros;
     };
 
     Money m1;
-    m1.notation = L'€';
+    m1.note = 'E';
     m1.euros = 42.5;
 
     cout << "\nUser-defined data types" << endl;
@@ -91,8 +87,6 @@ int user_defined_datatypes() {
     cout << "Class -> ";
     f1.printInfo();
     // only use one member of the union at a time
-    cout << "Union -> Notation: " << m1.notation << ", Euros: " << m1.euros << endl;
-
-    return 0;
+    cout << "Union -> Euros: " << m1.euros;
 }
 
