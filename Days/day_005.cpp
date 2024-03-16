@@ -15,13 +15,17 @@ using namespace std;
 
 void array_1D();
 void array_2D();
+void array_3D();
 
 int main() {
+    // TODO: test arrays w/ values double for output
     ios_base::sync_with_stdio(false);
     printf("*** Array 1D ***");
     array_1D();
     printf("\n\n*** Array 2D ***\n");
     array_2D();
+    printf("\n\n*** Array 3D ***\n");
+    array_3D();
 }
 
 void array_1D() {
@@ -62,6 +66,29 @@ void array_2D() {
     for (auto& i : arr) {
         for (int j : i) {
             printf("%d ", j);
+        }
+        printf("\n");
+    }
+}
+
+void array_3D() {
+    int arr[5][4][4];
+
+    for (int d=0; d<5; d++) {
+        for (int r=0; r<4; r++) {
+            for (int c=0; c<4; c++) {
+                arr[d][r][c] = d+r+c;
+            }
+        }
+    }
+
+    for (int d=0; d<5; d++) {
+        printf("%ist layer\n", d+1);
+        for (int r=0; r<4; r++) {
+            for (int c=0; c<4; c++) {
+                printf("%d ", arr[d][r][c]);
+            }
+            printf("\n");
         }
         printf("\n");
     }
