@@ -4,10 +4,6 @@
     * One-dimensional: store multiple values of similar data types;
     * Two-dimensional: arrange elements in rows and columns;
     * Three-dimensional: collection of two-dimensional arrays pilled on top of each other.
- * Linked List:
- * Stack:
- * Queue:
- * Hash Table:
  */
 
 #include <iostream>
@@ -18,7 +14,6 @@ void array_2D();
 void array_3D();
 
 int main() {
-    // TODO: test arrays w/ values double for output
     ios_base::sync_with_stdio(false);
     printf("*** Array 1D ***");
     array_1D();
@@ -56,7 +51,6 @@ void array_1D() {
 void array_2D() {
     int arr[4][4];
 
-    // initialize 2D
     for (int i=0; i<4; i++) {
         for (int j=0;j<4; j++) {
             arr[i][j] = i+j;
@@ -72,9 +66,9 @@ void array_2D() {
 }
 
 void array_3D() {
-    int arr[5][4][4];
+    int arr[4][4][4];
 
-    for (int d=0; d<5; d++) {
+    for (int d=0; d<4; d++) {
         for (int r=0; r<4; r++) {
             for (int c=0; c<4; c++) {
                 arr[d][r][c] = d+r+c;
@@ -82,7 +76,7 @@ void array_3D() {
         }
     }
 
-    for (int d=0; d<5; d++) {
+    for (int d=0; d<4; d++) {
         printf("%ist layer\n", d+1);
         for (int r=0; r<4; r++) {
             for (int c=0; c<4; c++) {
