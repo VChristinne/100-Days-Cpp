@@ -1,14 +1,3 @@
-/*
- * Data types: determining the type of value a variable can hold and how much memory space it will occupy.
- * Basic data types in C++ include integers, floating-point numbers, characters, and booleans.
- * Derived data types include arrays, pointers, and references.
- * User-defined data types include structures, unions, and enumerations.
- * Structures are used to define a group of variables under a single name.
- * Unions are similar to structures, but they use the same memory location for all their members.
- * Enumerations are used to define a group of named constants.
- * Classes are used to define a blueprint for objects.
-*/
-
 #include <iostream>
 using std::cout, std::endl, std::string;
 

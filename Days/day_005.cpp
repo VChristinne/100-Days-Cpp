@@ -1,11 +1,3 @@
-/*
- * Data Structures: a way of storing data and permits some operations on the data.
- * Array: sequence of elements of the same data type, include the contained type and the length.
-    * One-dimensional: store multiple values of similar data types;
-    * Two-dimensional: arrange elements in rows and columns;
-    * Three-dimensional: collection of two-dimensional arrays pilled on top of each other.
- */
-
 #include <iostream>
 using namespace std;
 
