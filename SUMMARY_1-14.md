@@ -17,7 +17,7 @@ Go back to [README.md](README.md)
 * It has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation.
 * Compiled language, with implementations of it available on many platforms.
 
-## Day 1: Basic Syntax
+## Day 1: [Basic Syntax](Days/day_001.cpp)
 
 * C++ programs are composed of a series of statements.
 * A statement can be an expression, a declaration, a function call, or a control structure.
@@ -50,18 +50,18 @@ Go back to [README.md](README.md)
     * `Enumerations` are used to define a group of named constants;
     * `Classes` are used to define a blueprint for objects.
 
-## Day 2: Morse Code Arduino Project
+## Day 2: [Morse Code Arduino Project](Practice/day_002-morse-code-arduino.cpp)
 
 * Created a simple Arduino project to convert a string into Morse code.
 * Used an LED to represent the Morse code output.
 
-## Day 3: Calculator Project
+## Day 3: [Calculator Project](Practice/day_003-calculator.cpp)
 
 * Take user input for two numbers.
 * Perform the operation based on the user's choice.
 * Used lambda functions to perform the operations.
 
-## Day 4: Guess the Number Game
+## Day 4: [Guessing Game](Practice/day_004-guessing-game.cpp)
 
 * Generate a random number between 1 and 100.
 * Have 3 levels of difficulty: easy, medium, and hard.
@@ -69,16 +69,23 @@ Go back to [README.md](README.md)
 * Allow the user to play again after winning or losing.
 * Used `#include <cstdlib>` and `#include <random>` to generate random numbers.
 
-## Day 5: Data Structures
+## Day 5: [Arrays](Days/day_005.cpp)
 
-* A way of storing data and permits some operations on the data.
-* Common data structures include arrays, linked lists, stacks, queues, trees, and graphs.
-    * Arrays sequence of elements of the same data type, include the contained type and the length.
-        * One dimensional arrays store multiple values of similar data types;
-        * Two-dimensional: arrange elements in rows and columns;
-        * Three-dimensional: collection of two-dimensional arrays pilled on top of each other.
-    * Linked lists are a collection of nodes, where each node contains data and a reference to the next node in the sequence.
-        * `Node` typically consists of two components;
-        * `Data holds` the actual value or data associated with the node;
-        * `Next pointer` stores the reference to the next node in the sequence;
-        * `Head and Tail` pointers are used to keep track of the first and last nodes in the list.
+* Arrays sequence of elements of the same data type, include the contained type and the length.
+    * `One dimensional` arrays store multiple values of similar data types;
+    * `Two-dimensional` arrange elements in rows and columns;
+    * `Three-dimensional` collection of two-dimensional arrays pilled on top of each other.
+
+* The elements of an array can be accessed using an index, which is an integer value that starts at 0.
+    * The `index` is used to specify the position of an element in the array;
+    * The `index` can be used to access or modify the value of an element in the array.
+  
+* The size of an array must be a constant value, and it determines the maximum number of elements that can be stored in the array.
+
+## Day 6: [Linked Lists](Days/day_006.cpp)
+
+* Collection of nodes, where each node contains data and a reference to the next node in the sequence.
+  * `Node` typically consists of two components;
+  * `Data holds` the actual value or data associated with the node;
+  * `Next pointer` stores the reference to the next node in the sequence;
+  * `Head and Tail` pointers are used to keep track of the first and last nodes in the list.
