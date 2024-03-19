@@ -33,11 +33,11 @@
   * `Pointers` are used to store the memory address of another variable.
   * `References` are used to create an alias for a variable.
   
-  * User-defined data types include structures, unions, and enumerations.
-    * `Structures` are used to define a group of variables under a single name;
-    * `Unions` are similar to structures, but they use the same memory location for all their members;
-    * `Enumerations` are used to define a group of named constants;
-    * `Classes` are used to define a blueprint for objects.
+* User-defined data types include structures, unions, and enumerations.
+  * `Structures` are used to define a group of variables under a single name;
+  * `Unions` are similar to structures, but they use the same memory location for all their members;
+  * `Enumerations` are used to define a group of named constants;
+  * `Classes` are used to define a blueprint for objects.
 
 ## Day 2: Morse Code Arduino Project
 
