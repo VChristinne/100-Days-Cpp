@@ -16,7 +16,9 @@ This is a 100-day journey through the C++ programming language, covering various
 
 ## Data Types
 
-**Days 1-14 (In progress)**
+**Days 1-14**
+
+[Summary of Day 1 to Day 14](SUMMARY_1-14.md)
 
 - Data Type:
   - Basic;
