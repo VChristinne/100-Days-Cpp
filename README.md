@@ -16,74 +16,44 @@ This is a 100-day journey through the C++ programming language, covering various
 
 ## Data Types
 
-**Days 1-14**
+**Days 1-14 (In progress)**
 
-- Static Typing
-- Dynamic Typing
-- RTI
+- Data Type:
+  - Basic;
+  - Derived;
+  - User-defined.
+    
+- Data Structures:
+  - Array (1D, 2D, 3D);
+  - Linked Lists;
 
 ## Pointers and References
 
 **Days 16-24**
 
-- Smart Pointers
-- Raw Pointers
-
 ## Structuring Codebase
 
 **Days 26-34**
-
-- Scope
-- Headers
-- Namespaces
-- Forward Declaration
 
 ## Structures and Classes
 
 **Days 36-46**
 
-- OOP
-- Rule of Zero, Three, and Five
-- Multiple and Diamond Inheritance
-
 ## Exception Handling
 
 **Days 49-59**
-
-- Access Violations
-- Exceptions
-- Exit Codes
 
 ## Standard Template Library (STL)
 
 **Days 62-76**
 
-- iostream
-- Date / Time
-- Containers
-- Algorithms
-- Iterators
-- Multithreading
-
 ## Templates
 
 **Days 79-94**
 
-- Variadic
-- Specialisation
-- Type Traits
-- SFINAE
-
 ## Idioms
 
 **Days 96-99**
-
-- Pimpl
-- CRTP
-- Non-Copyable
-- Erase-remove
-- Copy and Swap
-- Copy-Write
 
 ## Wrap Up
 
