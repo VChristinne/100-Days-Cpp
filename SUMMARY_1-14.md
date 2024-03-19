@@ -1,5 +1,14 @@
 # Summary of Day 1 to Day 14
 
+## Table of Contents
+
+1. [Introduction to C++](#day-0-introduction-to-c)
+2. [Basic Syntax](#day-1-basic-syntax)
+3. [Morse Code Arduino Project](#day-2-morse-code-arduino-project)
+4. [Calculator Project](#day-3-calculator-project)
+5. [Guess the Number Game](#day-4-guess-the-number-game)
+6. [Data Structures](#day-5-data-structures)
+
 ## Day 0: Introduction to C++
 
 * General-purpose programming language.
