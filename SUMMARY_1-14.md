@@ -8,7 +8,7 @@ Go back to [README.md](README.md)
 2. [Basic Syntax](#day-1-basic-syntax)
 3. [Morse Code Arduino Project](#day-2-morse-code-arduino-project)
 4. [Calculator Project](#day-3-calculator-project)
-5. [Guess the Number Game](#day-4-guess-the-number-game)
+5. [Guessing Game](#day-4-guessing-game)
 6. [Data Structures](#day-5-data-structures)
 
 ## Day 0: Introduction to C++
