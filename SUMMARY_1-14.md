@@ -97,9 +97,14 @@ Go back to [README.md](README.md)
 
 
 * **Types** of linked lists:
-    * `Singly` each node points to the next node in the sequence
+    * `Singly` each node points to the next node in the sequence;
+    <img width="600" alt="singly linked lists" src="https://github.com/VChristinne/100-Days-Cpp/assets/141720673/d9970249-73b8-4bba-a417-3e8a6edc3b92">
+    
     * `Doubly` each node points to the next and previous nodes in the sequence;
+    <img width="600" alt="doubly linked lists" src="https://github.com/VChristinne/100-Days-Cpp/assets/141720673/c1daefe1-e9c2-4f0f-b53d-28708c9d1960">
+    
     * `Circular` the last node points back to the first node in the sequence.
+    <img width="600" alt="circular linked lists" src="https://github.com/VChristinne/100-Days-Cpp/assets/141720673/f04c3494-6943-4fbd-8e7c-077294e30cfa">
 
 
 * **Advantages** for using linked lists include:
