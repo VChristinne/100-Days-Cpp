@@ -9,7 +9,8 @@ Go back to [README.md](README.md)
 3. [Morse Code Arduino Project](#day-2-morse-code-arduino-project)
 4. [Calculator Project](#day-3-calculator-project)
 5. [Guessing Game](#day-4-guessing-game)
-6. [Data Structures](#day-5-data-structures)
+6. [Arrays](#day-5-arrays)
+7. [Linked Lists](#day-6-linked-lists)
 
 ## Day 0: Introduction to C++
 
