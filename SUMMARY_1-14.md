@@ -27,28 +27,31 @@ Go back to [README.md](README.md)
 
 ### Data Types
 
-* Provides several basic data types, including `int`, `float`, `double`, `char`, and `bool`.
-    * Integer types can be signed or unsigned and can have different sizes.
-    * Floating-point types can represent real numbers and have different precisions.
-    * The `double` type has double precision.
-    * The `char` type can store a single character.
-    * The `bool` type can store a truth value.
-    * The `void` type is used to represent the absence of type.
+* Provides several **basic data types**, including `int`, `float`, `double`, `char`, and `bool`.
+  * Integer types can be signed or unsigned and can have different sizes.
+  * Floating-point types can represent real numbers and have different precisions.
+  * The `double` type has double precision.
+  * The `char` type can store a single character.
+  * The `bool` type can store a truth value.
+  * The `void` type is used to represent the absence of type.
 
-* Data types determine the type of value a variable can hold and how much memory space it will occupy.
-    * The `auto` keyword can be used to automatically deduce the data type of variable.
-    * The `const` keyword can be used to define a constant variable.
 
-* Derived data types include arrays, pointers, and references.
-    * `Arrays` are used to store multiple values of the same data type under a single name.
-    * `Pointers` are used to store the memory address of another variable.
-    * `References` are used to create an alias for a variable.
+* **Data types** determine the type of value a variable can hold and how much memory space it will occupy.
+  * The `auto` keyword can be used to automatically deduce the data type of variable.
+  * The `const` keyword can be used to define a constant variable.
 
-* User-defined data types include structures, unions, and enumerations.
-    * `Structures` are used to define a group of variables under a single name;
-    * `Unions` are similar to structures, but they use the same memory location for all their members;
-    * `Enumerations` are used to define a group of named constants;
-    * `Classes` are used to define a blueprint for objects.
+
+* **Derived data** types include arrays, pointers, and references.
+  * `Arrays` are used to store multiple values of the same data type under a single name.
+  * `Pointers` are used to store the memory address of another variable.
+  * `References` are used to create an alias for a variable.
+
+
+* **User-defined** data types include structures, unions, and enumerations.
+  * `Structures` are used to define a group of variables under a single name;
+  * `Unions` are similar to structures, but they use the same memory location for all their members;
+  * `Enumerations` are used to define a group of named constants;
+  * `Classes` are used to define a blueprint for objects.
 
 ## Day 2: [Morse Code Arduino Project](Practice/day_002-morse-code-arduino.cpp)
 
@@ -72,14 +75,16 @@ Go back to [README.md](README.md)
 ## Day 5: [Arrays](Days/day_005.cpp)
 
 * Arrays sequence of elements of the same data type, include the contained type and the length.
-    * `One dimensional` arrays store multiple values of similar data types;
-    * `Two-dimensional` arrange elements in rows and columns;
-    * `Three-dimensional` collection of two-dimensional arrays pilled on top of each other.
+  * `One dimensional` arrays store multiple values of similar data types;
+  * `Two-dimensional` arrange elements in rows and columns;
+  * `Three-dimensional` collection of two-dimensional arrays pilled on top of each other.
+
 
 * The elements of an array can be accessed using an index, which is an integer value that starts at 0.
-    * The `index` is used to specify the position of an element in the array;
-    * The `index` can be used to access or modify the value of an element in the array.
-  
+  * The `index` is used to specify the position of an element in the array;
+  * The `index` can be used to access or modify the value of an element in the array.
+
+
 * The size of an array must be a constant value, and it determines the maximum number of elements that can be stored in the array.
 
 ## Day 6: [Linked Lists](Days/day_006.cpp)
@@ -89,3 +94,21 @@ Go back to [README.md](README.md)
   * `Data holds` the actual value or data associated with the node;
   * `Next pointer` stores the reference to the next node in the sequence;
   * `Head and Tail` pointers are used to keep track of the first and last nodes in the list.
+
+
+* **Types** of linked lists:
+    * `Singly` each node points to the next node in the sequence
+    * `Doubly` each node points to the next and previous nodes in the sequence;
+    * `Circular` the last node points back to the first node in the sequence.
+
+
+* **Advantages** for using linked lists include:
+  * `Dynamic size` can grow or shrink at runtime based on the operations;
+  * `Efficient insertion and deletion` operations;
+  * `No need for contiguous memory` allocation;
+  * `Versatile` can be used to implement other data structures.
+
+
+* **Disadvantages** of linked lists include:
+  * `No direct access` elements traversal required to access elements;
+  * `Extra memory` required to store the next pointer;
