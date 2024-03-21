@@ -27,32 +27,25 @@ Go back to [README.md](README.md)
 * The `using namespace std` directive allows the use of elements from the `std` namespace without needing to prefix them with `std::`.
 
 ### Data Types
+* `int` types can be signed or unsigned and can have different sizes.
+* `float` types can represent real numbers and have different precisions.
+* `double` type has double precision.
+* `char` type can store a single character.
+* `bool` type can store a truth value.
+* `void` type is used to represent the absence of type.
+* `auto` keyword can be used to automatically deduce the data type of variable.
+* `const` keyword can be used to define a constant variable.
 
-* Provides several **basic data types**, including `int`, `float`, `double`, `char`, and `bool`.
-  * Integer types can be signed or unsigned and can have different sizes.
-  * Floating-point types can represent real numbers and have different precisions.
-  * The `double` type has double precision.
-  * The `char` type can store a single character.
-  * The `bool` type can store a truth value.
-  * The `void` type is used to represent the absence of type.
+### **Derived data**
+* `Arrays` are used to store multiple values of the same data type under a single name.
+* `Pointers` are used to store the memory address of another variable.
+* `References` are used to create an alias for a variable.
 
-
-* **Data types** determine the type of value a variable can hold and how much memory space it will occupy.
-  * The `auto` keyword can be used to automatically deduce the data type of variable.
-  * The `const` keyword can be used to define a constant variable.
-
-
-* **Derived data** types include arrays, pointers, and references.
-  * `Arrays` are used to store multiple values of the same data type under a single name.
-  * `Pointers` are used to store the memory address of another variable.
-  * `References` are used to create an alias for a variable.
-
-
-* **User-defined** data types include structures, unions, and enumerations.
-  * `Structures` are used to define a group of variables under a single name;
-  * `Unions` are similar to structures, but they use the same memory location for all their members;
-  * `Enumerations` are used to define a group of named constants;
-  * `Classes` are used to define a blueprint for objects.
+### **User-defined**
+* `Structures` are used to define a group of variables under a single name;
+* `Unions` are similar to structures, but they use the same memory location for all their members;
+* `Enumerations` are used to define a group of named constants;
+* `Classes` are used to define a blueprint for objects.
 
 ## Day 2: [Morse Code Arduino Project](Practice/day_002-morse-code-arduino.cpp)
 
@@ -96,25 +89,38 @@ Go back to [README.md](README.md)
   * `Next pointer` stores the reference to the next node in the sequence;
   * `Head and Tail` pointers are used to keep track of the first and last nodes in the list.
 
+### Singly Linked Lists
 
-* **Types** of linked lists:
-    * `Singly` each node points to the next node in the sequence;
-    <img width="600" alt="singly linked lists" src="https://github.com/VChristinne/100-Days-Cpp/assets/141720673/d9970249-73b8-4bba-a417-3e8a6edc3b92">
-    
-    * `Doubly` each node points to the next and previous nodes in the sequence;
-    <img width="600" alt="doubly linked lists" src="https://github.com/VChristinne/100-Days-Cpp/assets/141720673/c1daefe1-e9c2-4f0f-b53d-28708c9d1960">
-    
-    * `Circular` the last node points back to the first node in the sequence.
-    <img width="600" alt="circular linked lists" src="https://github.com/VChristinne/100-Days-Cpp/assets/141720673/f04c3494-6943-4fbd-8e7c-077294e30cfa">
+* Each node points to the **next node** in the sequence.
+* Allows for traversal in one direction.
+* Useful for applications that require forward traversal.
+* **[Code](Days/day_006.cpp)** for singly linked list insertion.
+
+<img width="600" alt="singly linked lists" src="https://github.com/VChristinne/100-Days-Cpp/assets/141720673/d9970249-73b8-4bba-a417-3e8a6edc3b92">
+
+### Doubly Linked Lists
+
+* Each node points to the **next and previous nodes** in the sequence.
+* Allows for traversal in both directions.
+* Useful for applications that require reverse traversal.
+
+<img width="600" alt="doubly linked lists" src="https://github.com/VChristinne/100-Days-Cpp/assets/141720673/c1daefe1-e9c2-4f0f-b53d-28708c9d1960">
+
+### Circular Linked Lists
+
+* The last node points **back to the first node** in the sequence.
+* Can be singly or doubly linked.
+* Useful for applications that require continuous access to the elements.
+  
+<img width="600" alt="circular linked lists" src="https://github.com/VChristinne/100-Days-Cpp/assets/141720673/f04c3494-6943-4fbd-8e7c-077294e30cfa">
 
 
-* **Advantages** for using linked lists include:
+### Advantages for using linked lists
   * `Dynamic size` can grow or shrink at runtime based on the operations;
   * `Efficient insertion and deletion` operations;
   * `No need for contiguous memory` allocation;
   * `Versatile` can be used to implement other data structures.
 
-
-* **Disadvantages** of linked lists include:
+### Disadvantages of linked lists
   * `No direct access` elements traversal required to access elements;
   * `Extra memory` required to store the next pointer;
