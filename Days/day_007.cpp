@@ -9,6 +9,7 @@ public:
 
 void push(Node** head_ref, int new_data);
 void deleteFirst(Node** head_ref);
+void deleteAfter(Node* prev_node, Node** head_ref);
 void deleteLast(Node** head_ref);
 void printList(Node* node);
 
@@ -18,12 +19,19 @@ int main() {
     push(&head, 5);
     push(&head, 7);
     push(&head, 9);
+    push(&head, 2);
+    push(&head, 8);
+    push(&head, 1);
 
     printf("Linked List: ");
     printList(head);
 
     deleteFirst(&head);
     printf("Deleted first: ");
+    printList(head);
+
+    deleteAfter(head, &head);
+    printf("Delete after head: ");
     printList(head);
 
     deleteLast(&head);
@@ -55,6 +63,20 @@ void deleteFirst(Node** head_ref) {
 }
 
 /*
+ * Time complex: O(1), prev_node is already give, so no need to iterate over list
+ * Space: O(1)
+ */
+void deleteAfter(Node* prev_node, Node** head_ref) {
+    if (prev_node == nullptr) {
+        printf("The given previous node cannot be NULL");
+        return;
+    }
+    Node* node_to_delete = prev_node->next;  // point to the node after prev_node
+    prev_node->next = node_to_delete->next;  // point to the node after node_to_delete
+    delete node_to_delete;
+}
+
+/*
  * Time complex: O(N), traverse the entire linked list to find the last node
  * Space: O(1), memory used by the function does not increase
  */
@@ -81,7 +103,7 @@ void deleteLast(Node** head_ref) {
         current = current->next;
     }
 
-    previous->next = nullptr;  // next as NULL
+    previous->next = nullptr;
     delete current;
 }
 
