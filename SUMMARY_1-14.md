@@ -71,7 +71,7 @@ Go back to [README.md](README.md)
 
 * The size of an array must be a constant value, and it determines the maximum number of elements that can be stored in the array.
 
-## Day 6: [Linked Lists](Days/day_006.cpp)
+## Day 6-9: [Linked Lists](Days/day_006.cpp)
 
 * Collection of nodes, where each node contains data and a reference to the next node in the sequence.
   * `Node` typically consists of two components;
