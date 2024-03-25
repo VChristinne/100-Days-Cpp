@@ -71,7 +71,7 @@ Go back to [README.md](README.md)
 
 * The size of an array must be a constant value, and it determines the maximum number of elements that can be stored in the array.
 
-## Day 6-9: [Linked Lists](Days/day_006.cpp)
+## Days 6-9: [Linked Lists](Days/day_006.cpp)
 
 * Collection of nodes, where each node contains data and a reference to the next node in the sequence.
   * `Node` typically consists of two components;
@@ -103,16 +103,16 @@ Go back to [README.md](README.md)
 * The last node points **back to the first node** in the sequence.
 * Can be singly or doubly linked.
 * Useful for applications that require continuous access to the elements.
-  
+
 <img width="600" alt="circular linked lists" src="https://github.com/VChristinne/100-Days-Cpp/assets/141720673/f04c3494-6943-4fbd-8e7c-077294e30cfa">
 
 
 ### Advantages for using linked lists
-  * `Dynamic size` can grow or shrink at runtime based on the operations;
-  * `Efficient insertion and deletion` operations;
-  * `No need for contiguous memory` allocation;
-  * `Versatile` can be used to implement other data structures.
+* `Dynamic size` can grow or shrink at runtime based on the operations;
+* `Efficient insertion and deletion` operations;
+* `No need for contiguous memory` allocation;
+* `Versatile` can be used to implement other data structures.
 
 ### Disadvantages of linked lists
-  * `No direct access` elements traversal required to access elements;
-  * `Extra memory` required to store the next pointer;
+* `No direct access` elements traversal required to access elements;
+* `Extra memory` required to store the next pointer;
