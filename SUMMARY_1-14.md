@@ -86,6 +86,7 @@ Go back to [README.md](README.md)
 * Useful for applications that require forward traversal.
 * **[Code](Days/day_006.cpp)** for singly linked list insertion.
 * **[Code](Days/day_007.cpp)** for singly linked list deletion.
+* **[Code](Practice/day_009-todolist-linkedLists.cpp)** for a simple to-do list using linked lists.
 
 <img width="600" alt="singly linked lists" src="https://github.com/VChristinne/100-Days-Cpp/assets/141720673/d9970249-73b8-4bba-a417-3e8a6edc3b92">
 
