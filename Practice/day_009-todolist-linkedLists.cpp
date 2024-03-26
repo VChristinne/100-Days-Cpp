@@ -14,10 +14,11 @@ public:
 void push(Task** head_ref, int& taskNumber);
 void deleteFirst(Task** head_ref, int& taskNumber);
 void deleteLast(Task** head_ref, int& taskNumber);
-bool search(Task* head);
+Task* search(Task* head);
 void showTask(Task* node);
-void updateTaskNumbers(Task** head_ref);
+void editTask(Task** head_ref);
 bool showTasks(Task* node);
+void updateTaskNumbers(Task** head_ref);
 int menu();
 
 int main() {
@@ -54,6 +55,11 @@ int main() {
             }
 
             case 6: {
+                editTask(&head);
+                continue;
+            }
+
+            case 7: {
                 return 0;
             }
 
@@ -71,7 +77,8 @@ int menu() {
     cout << "3. Delete last task\n";
     cout << "4. Show tasks\n";
     cout << "5. Search task\n";
-    cout << "6. Exit\n";
+    cout << "6. Edit task\n";
+    cout << "7. Exit\n";
     cout << "Enter your choice: ";
     cin >> choice;
 
@@ -133,7 +140,7 @@ void deleteLast(Task** head_ref, int& taskNumber) {
     updateTaskNumbers(head_ref);
 }
 
-bool search(Task* head) {
+Task* search(Task* head) {
     string userInput;
     cout << "\nEnter search input: ";
     cin >> userInput;
@@ -146,12 +153,12 @@ bool search(Task* head) {
 
         if (taskNumber == userInput || current->title == userInput || current->description == userInput) {
             showTask(current);
-            return true;
+            return current;
         }
         current = current->next;
     }
     cout << "Task not found\n";
-    return false;
+    return nullptr;
 }
 
 void showTask(Task* node) {
@@ -164,15 +171,6 @@ void showTask(Task* node) {
     cout << "\nTask description: " << node->description;
     cout << "\nTask Status: " << (node->done ? "Done" : "Pending");
     cout << "\n";
-}
-
-void updateTaskNumbers(Task** head_ref) {
-    Task* current = *head_ref;
-    int taskNumber = 1;
-    while (current != nullptr) {
-        current->data = taskNumber++;
-        current = current->next;
-    }
 }
 
 bool showTasks(Task* node) {
@@ -189,4 +187,30 @@ bool showTasks(Task* node) {
         current = current->next;
     }
     return true;
+}
+
+void editTask(Task** head_ref) {
+    Task* taskToEdit = search(*head_ref);
+
+    if (taskToEdit != nullptr) {
+        cout << "Enter new title: ";
+        cin >> taskToEdit->title;
+        cout << "Enter new description: ";
+        cin >> taskToEdit->description;
+        string doneInput;
+        cout << "Task done? (yes/no): ";
+        cin >> doneInput;
+        taskToEdit->done = (doneInput == "yes");
+        cout << "Task updated\n";
+        return;
+    }
+}
+
+void updateTaskNumbers(Task** head_ref) {
+    Task* current = *head_ref;
+    int taskNumber = 1;
+    while (current != nullptr) {
+        current->data = taskNumber++;
+        current = current->next;
+    }
 }
