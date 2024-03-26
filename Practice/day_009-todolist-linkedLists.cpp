@@ -12,8 +12,7 @@ public:
 };
 
 void push(Task** head_ref, int& taskNumber);
-void deleteFirst(Task** head_ref, int& taskNumber);
-void deleteLast(Task** head_ref, int& taskNumber);
+void deleteTask(Task** head_ref);
 Task* search(Task* head);
 void showTask(Task* node);
 void editTask(Task** head_ref);
@@ -35,31 +34,26 @@ int main() {
             }
 
             case 2: {
-                deleteFirst(&head, taskNumber);
+                deleteTask(&head);
                 continue;
             }
 
             case 3: {
-                deleteLast(&head, taskNumber);
-                continue;
-            }
-
-            case 4: {
                 showTasks(head) ? cout : cout << "No tasks to show\n";
                 continue;
             }
 
-            case 5: {
+            case 4: {
                 search(head) ? cout : cout << "No tasks to show\n";
                 continue;
             }
 
-            case 6: {
+            case 5: {
                 editTask(&head);
                 continue;
             }
 
-            case 7: {
+            case 6: {
                 return 0;
             }
 
@@ -73,15 +67,13 @@ int main() {
 int menu() {
     int choice;
     cout << "\n1. Add a task\n";
-    cout << "2. Delete first task\n";
-    cout << "3. Delete last task\n";
-    cout << "4. Show tasks\n";
-    cout << "5. Search task\n";
-    cout << "6. Edit task\n";
-    cout << "7. Exit\n";
+    cout << "2. Delete task\n";
+    cout << "3. Show tasks\n";
+    cout << "4. Search task\n";
+    cout << "5. Edit task\n";
+    cout << "6. Exit\n";
     cout << "Enter your choice: ";
     cin >> choice;
-
     return choice;
 }
 
@@ -104,40 +96,23 @@ void push(Task** head_ref, int& taskNumber) {
     cout << "Task added\n";
 }
 
-void deleteFirst(Task** head_ref, int& taskNumber) {
-    if (*head_ref == nullptr) {
-        cout << "List empty, nothing to delete\n";
+void deleteTask(Task** head_ref) {
+    Task* taskToDelete = search(*head_ref);
+    if (taskToDelete == nullptr) {
         return;
     }
-    Task* temp_node = *head_ref;
-    (*head_ref) = (*head_ref)->next;
+
+    if (*head_ref == taskToDelete) {
+        *head_ref = taskToDelete->next;
+    } else {
+        Task* prev = *head_ref;
+        while (prev->next != taskToDelete) {
+            prev = prev->next;
+        }
+        prev->next = taskToDelete->next;
+    }
     updateTaskNumbers(head_ref);
-    delete temp_node;
-}
-
-void deleteLast(Task** head_ref, int& taskNumber) {
-    if (*head_ref == nullptr) {
-        cout << "List empty, nothing to delete\n";
-        return;
-    }
-
-    if ((*head_ref)->next == nullptr) {
-        delete *head_ref;
-        *head_ref = nullptr;
-        return;
-    }
-
-    Task* current = *head_ref;
-    Task* prev = nullptr;
-
-    while (current->next != nullptr) {
-        prev = current;
-        current = current->next;
-    }
-
-    prev->next = nullptr;
-    delete current;
-    updateTaskNumbers(head_ref);
+    delete taskToDelete;
 }
 
 Task* search(Task* head) {
