@@ -33,6 +33,7 @@ Go back to [README.md](README.md)
 
 ### **User-defined**
 * `Structures` are used to define a group of variables under a single name;
+  * **[Code](Practice/day_008-todolist-struct.cpp)** for a simple to-do list using structures.
 * `Unions` are similar to structures, but they use the same memory location for all their members;
 * `Enumerations` are used to define a group of named constants;
 * `Classes` are used to define a blueprint for objects.
