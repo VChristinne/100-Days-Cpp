@@ -4,7 +4,7 @@ This is a 100-day journey through the C++ programming language, covering various
 
 ## Table of Contents
 
-1. [Data Types](#data-types)
+1. [Data Structures](#data-structures)
 2. [Pointers and References](#pointers-and-references)
 3. [Structuring Codebase](#structuring-codebase)
 4. [Structures and Classes](#structures-and-classes)
@@ -14,7 +14,7 @@ This is a 100-day journey through the C++ programming language, covering various
 8. [Idioms](#idioms)
 9. [Wrap up](#wrap-up)
 
-## Data Types
+## Data Structures
 
 **Days 1-14**
 
@@ -24,10 +24,9 @@ This is a 100-day journey through the C++ programming language, covering various
   - Basic;
   - Derived;
   - User-defined.
-    
-- Data Structures:
+- Basic Data Structures:
   - Array (1D, 2D, 3D);
-  - Linked Lists;
+  - Linked Lists (Single, Double, Circular);
 
 ## Pointers and References
 
