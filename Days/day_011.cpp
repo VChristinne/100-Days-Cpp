@@ -11,11 +11,14 @@ public:
 int push(Node** head_ref, int new_data);
 void deleteFirst(Node** head_ref);
 void deleteAfter(Node* prev_node, Node** head_ref);
+void deleteBefore(Node* next_node);
 void printList(Node* node);
 
 int main() {
     Node* head = nullptr;
 
+    push(&head, 17);
+    push(&head, 14);
     push(&head, 12);
     push(&head, 9);
     push(&head, 6);
@@ -27,6 +30,10 @@ int main() {
 
     printf("\nDelete After %d\n", head->data);
     deleteAfter(head, &head);
+    printList(head);
+
+    printf("\nDelete Before %d\n", head->data);
+    deleteBefore(head);
     printList(head);
 
     return 0;
@@ -69,6 +76,19 @@ void deleteAfter(Node* prev_node, Node** head_ref) {
     if (prev_node->next != nullptr) {
         prev_node->next->prev = prev_node;
     }
+    delete temp_node;
+}
+
+void deleteBefore(Node* next_node) {
+    if (next_node == nullptr || next_node->prev == nullptr) {
+        printf("The given next node or the previous node cannot be NULL\n");
+        return;
+    }
+    Node* temp_node = next_node->prev;
+    if (temp_node->prev != nullptr) {
+        temp_node->prev->next = next_node;
+    }
+    next_node->prev = temp_node->prev;
     delete temp_node;
 }
 
