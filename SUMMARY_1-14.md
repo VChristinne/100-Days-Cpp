@@ -97,6 +97,7 @@ Go back to [README.md](README.md)
 * Allows for traversal in both directions.
 * Useful for applications that require reverse traversal.
 * **[Code](Days/day_010.cpp)** for double linked list insertion.
+* **[Code](Days/day_011.cpp)** for double linked list deletion.
 
 <img width="600" alt="doubly linked lists" src="https://github.com/VChristinne/100-Days-Cpp/assets/141720673/c1daefe1-e9c2-4f0f-b53d-28708c9d1960">
 
