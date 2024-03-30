@@ -12,12 +12,13 @@ int push(Node** head_ref, int new_data);
 void deleteFirst(Node** head_ref);
 void deleteAfter(Node* prev_node, Node** head_ref);
 void deleteBefore(Node* next_node);
+void deleteLast(Node** head_ref);
 void printList(Node* node);
 
 int main() {
     Node* head = nullptr;
 
-    push(&head, 17);
+    int last_node = push(&head, 17);
     push(&head, 14);
     push(&head, 12);
     push(&head, 9);
@@ -28,12 +29,16 @@ int main() {
     deleteFirst(&head);
     printList(head);
 
-    printf("\nDelete After %d\n", head->data);
+    printf("\nDelete After (%d)\n", head->data);
     deleteAfter(head, &head);
     printList(head);
 
-    printf("\nDelete Before %d\n", head->data);
+    printf("\nDelete Before (%d)\n", head->data);
     deleteBefore(head);
+    printList(head);
+
+    printf("\nDelete Last (%d)\n", last_node);
+    deleteLast(&head);
     printList(head);
 
     return 0;
@@ -81,7 +86,7 @@ void deleteAfter(Node* prev_node, Node** head_ref) {
 
 void deleteBefore(Node* next_node) {
     if (next_node == nullptr || next_node->prev == nullptr) {
-        printf("The given next node or the previous node cannot be NULL\n");
+        printf("The given next or previous node cannot be NULL\n");
         return;
     }
     Node* temp_node = next_node->prev;
@@ -90,6 +95,28 @@ void deleteBefore(Node* next_node) {
     }
     next_node->prev = temp_node->prev;
     delete temp_node;
+}
+
+void deleteLast(Node** head_ref) {
+    if (*head_ref == nullptr) {
+        printf("List empty, nothing to delete");
+        return;
+    }
+
+    // only one node
+    if ((*head_ref)->next == nullptr) {
+        delete *head_ref;
+        *head_ref = nullptr;
+        return;
+    }
+
+    // Traverse till second last node
+    Node* second_last = *head_ref;
+    while (second_last->next->next != nullptr) {
+        second_last = second_last->next;
+    }
+    delete second_last->next;
+    second_last->next = nullptr;
 }
 
 void printList(Node* node) {
