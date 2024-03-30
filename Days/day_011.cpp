@@ -58,6 +58,10 @@ int push(Node** head_ref, int new_data) {
     return new_data;
 }
 
+/*
+ * Time complex: O(1)
+ * Space: O(1)
+ */
 void deleteFirst(Node** head_ref) {
     if (*head_ref == nullptr) {
         printf("List empty, nothing to delete");
@@ -71,6 +75,10 @@ void deleteFirst(Node** head_ref) {
     delete temp_node;
 }
 
+/*
+ * Time complex: O(1)
+ * Space: O(1)
+ */
 void deleteAfter(Node* prev_node, Node** head_ref) {
     if (prev_node == nullptr || prev_node->next == nullptr) {
         printf("The given previous or next node cannot be NULL");
@@ -84,6 +92,10 @@ void deleteAfter(Node* prev_node, Node** head_ref) {
     delete temp_node;
 }
 
+/*
+ * Time complex: O(1)
+ * Space: O(1)
+ */
 void deleteBefore(Node* next_node) {
     if (next_node == nullptr || next_node->prev == nullptr) {
         printf("The given next or previous node cannot be NULL\n");
@@ -97,6 +109,10 @@ void deleteBefore(Node* next_node) {
     delete temp_node;
 }
 
+/*
+ * Time complex: O(n)
+ * Space: O(1)
+ */
 void deleteLast(Node** head_ref) {
     if (*head_ref == nullptr) {
         printf("List empty, nothing to delete");
