@@ -107,6 +107,7 @@ Go back to [README.md](README.md)
 * Can be singly or doubly linked.
 * Useful for applications that require continuous access to the elements.
 * **[Code](Days/day_012.cpp)** for circular linked list insertion.
+* **[Code](Days/day_013.cpp)** for circular linked list deletion.
 
 <img width="600" alt="circular linked lists" src="https://github.com/VChristinne/100-Days-Cpp/assets/141720673/f04c3494-6943-4fbd-8e7c-077294e30cfa">
 
