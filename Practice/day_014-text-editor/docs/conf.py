@@ -3,7 +3,7 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('..'))
 
-project = 'Zed'
+project = 'Zed-Editor-Text'
 author = 'Christinne'
 
 extensions = [
