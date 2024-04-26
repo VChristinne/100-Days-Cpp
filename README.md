@@ -5,18 +5,11 @@ This is a 100-day journey through the C++ programming language, covering various
 ## Table of Contents
 
 1. [Data Type and Basic Data Structures](#data-type-and-basic-data-structures)
-2. [Pointers and References](#pointers-and-references)
-3. [Structuring Codebase](#structuring-codebase)
-4. [Structures and Classes](#structures-and-classes)
-5. [Exception handling](#exception-handling)
-6. [Standard Template Library (STL)](#standard-template-library-stl)
-7. [Templates](#templates)
-8. [Idioms](#idioms)
-9. [Wrap up](#wrap-up)
+2. [Tree Data Structures](#tree-data-structures)
 
 ## Data Type and Basic Data Structures
 
-**Days 1-14**
+**Days 1-13**
 
 [Summary of Day 1 to Day 13](SUMMARY_1-13.md)
 
@@ -26,39 +19,15 @@ This is a 100-day journey through the C++ programming language, covering various
   - User-defined.
 - Basic Data Structures:
   - Array (1D, 2D, 3D);
-  - Linked Lists (Single, Double, Circular);
+  - Linked Lists (Single, Double, Circular).
 
-## Pointers and References
+## Tree Data Structures
 
-**Days 16-24**
+**Days 14-20**
 
-## Structuring Codebase
+[Summary of Day 14 to Day 21](SUMMARY_14-21.md)
 
-**Days 26-34**
-
-## Structures and Classes
-
-**Days 36-46**
-
-## Exception Handling
-
-**Days 49-59**
-
-## Standard Template Library (STL)
-
-**Days 62-76**
-
-## Templates
-
-**Days 79-94**
-
-## Idioms
-
-**Days 96-99**
-
-## Wrap Up
-
-**Day 100**
-
-- Review and Practice
-- Final Project
+- Binary Trees;
+- Binary Search Trees;
+- AVL Trees;
+- B-Trees.
