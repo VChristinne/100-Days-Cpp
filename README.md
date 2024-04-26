@@ -4,7 +4,7 @@ This is a 100-day journey through the C++ programming language, covering various
 
 ## Table of Contents
 
-1. [Data Structures](#data-structures)
+1. [Data Type and Basic Data Structures](#data-type-and-basic-data-structures)
 2. [Pointers and References](#pointers-and-references)
 3. [Structuring Codebase](#structuring-codebase)
 4. [Structures and Classes](#structures-and-classes)
@@ -14,11 +14,11 @@ This is a 100-day journey through the C++ programming language, covering various
 8. [Idioms](#idioms)
 9. [Wrap up](#wrap-up)
 
-## Data Structures
+## Data Type and Basic Data Structures
 
 **Days 1-14**
 
-[Summary of Day 1 to Day 14](SUMMARY_1-14.md)
+[Summary of Day 1 to Day 13](SUMMARY_1-13.md)
 
 - Data Type:
   - Basic;
