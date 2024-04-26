@@ -28,6 +28,6 @@ This is a 100-day journey through the C++ programming language, covering various
 [Summary of Day 14 to Day 21](SUMMARY_14-21.md)
 
 - Binary Trees;
-- Binary Search Trees;
+  - Binary Search Trees.
 - AVL Trees;
 - B-Trees.
