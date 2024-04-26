@@ -1,4 +1,4 @@
-# Summary of Day 1 to Day 14
+# Summary of Day 1 to Day 13
 
 Go back to [README.md](README.md)
 
@@ -72,7 +72,7 @@ Go back to [README.md](README.md)
 
 * The size of an array must be a constant value, and it determines the maximum number of elements that can be stored in the array.
 
-## Days 6-14: [Linked Lists](Days/day_006.cpp)
+## Days 6-13: [Linked Lists](Days/day_006.cpp)
 
 * Collection of nodes, where each node contains data and a reference to the next node in the sequence.
   * `Node` typically consists of two components;
