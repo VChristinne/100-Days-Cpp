@@ -2,7 +2,7 @@
 
 Go back to [README.md](README.md)
 
-## Day 0: Introduction to C++
+## Introduction to C++
 
 * General-purpose programming language.
 * It has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation.
